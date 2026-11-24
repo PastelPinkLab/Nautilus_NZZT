@@ -1,6 +1,6 @@
 <h1 align="center">
 
-Nautilus NZZT Experimental Source
+Nautilus NZZT
 
 ---
 
@@ -19,7 +19,7 @@ Nautilus is a lightweight, standalone PowerShell all-in-one ISO builder that all
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### Flexible Windows 11/10 supports and auto-converting ESD to WIM
 * **Windows 11/10 Compatibility:** Automatically detects **Windows 10**, **Windows 11**, and **LTSC / IoT LTSC** (`EnterpriseS`, including LTSC 2019 `ReleaseId` builds).
@@ -41,7 +41,7 @@ Nautilus is a lightweight, standalone PowerShell all-in-one ISO builder that all
 
 ---
 
-## 🧹 What Gets Removed & Kept
+## What Gets Removed & Kept
 
 #### Provisioned UWP / AppX Packages (Allowlist-Based)
 * `Microsoft.WindowsStore`, `Microsoft.StorePurchaseApp`, `Microsoft.Services.Store.Engagement`
@@ -60,14 +60,14 @@ After running `DISM /StartComponentCleanup /ResetBase` to keep WinSxS clean, Nau
 * **Core bloat:** OneDrive Setup, Internet Explorer / Browser packages, Windows Copilot, Windows Recall & AIX, Outlook/FlipGrid PWAs, CEIP, Extended Wallpapers, WordPad, Quick Assist, Steps Recorder, Remote Assistance, XPS/Fax, Retail Demo, OpenSSH Server, Edge DevTools Client.
 * **Enterprise leftovers:** Holographic Desktop (Windows Mixed Reality), Application Guard / HVSI, WMP Network Sharing, App-V, UE-V, ADAM Directory Services, MSMQ, IIS WebServer, DataCenter Bridging, PeerDist, Offline Files, Host Guardian / Shielded VM, SimpleTCP, Telnet/TFTP Clients, NFS Client, Embedded/IoT packages.
 
-#### Browser, Cloud & Shell Cleanup
+#### Browser, OneDrive
 * **Edge & OneDrive:** Purges Microsoft Edge, EdgeUpdate, EdgeCore, Edge WebView2 (`DISM /Remove-Edge` + forced directory cleanup), `OneDriveSetup.exe` (System32 & SysWOW64), and orphaned Default App Associations (`MicrosoftEdge`, `Zune`, `Bing`, `Xbox`).
 * **Dead SystemApps:** Removes `PeopleExperienceHost`, `ParentalControls`, `NarratorQuickStart`, `CallingShellApp`, and `ECApp`.
 * **ISO Debloating:** Strips `support`, `sources\migwiz`, and `sources\sxs` (when .NET 3.5 is integrated) before packaging.
 
 ---
 
-## ⚙️ System Tweaks & Hardening
+## System Tweaks
 
 * **OOBE & Local Accounts:** Enables `BypassNRO`, skips Wi-Fi setup.
 * **Privacy & IFEO Telemetry Blocking:** Disables Telemetry (`AllowTelemetry = 0`), Advertising ID, Tailored Experiences, and Online Speech/Inking/Typing data collection.
@@ -97,7 +97,7 @@ After running `DISM /StartComponentCleanup /ResetBase` to keep WinSxS clean, Nau
 6. Sit back and let the tool do it
 
 ## License
-- Not available
+- Nautilus is licensed under the GPLv3 license. See the LICENSE file for more information
 
 ## Credits
 - [NTDEV](https://github.com/ntdevlabs) for creating and hosting Tiny11Builder
