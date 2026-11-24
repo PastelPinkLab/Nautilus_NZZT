@@ -15,7 +15,7 @@ Nautilus is a lightweight, standalone PowerShell all-in-one ISO builder that all
 > [!Warning]
 > Great care went into making sure this script does not unintentionally break any OS functionality, but use at your own risk! This script modifies core system images offline. Always test your generated ISO on a Virtual Machine before deploying it on your main hardware.
 
-> This script in this repo is experimental. If you're looking for the main repo, take a look at this [link](https://github.com/PastelPinkLab/Nautilus_NZZT).
+> This script in this repo is experimental. If you're looking for the experimental repo, take a look at this [link](https://github.com/epiphany-sudo/Nautilus_NZZT_Experimental).
 
 ---
 
